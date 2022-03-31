@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizzbuzz</title>
+</head>
+<body>
+    <script>
+        let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+
+        for (let i = 1; i <= answer; i++) {
+            if (divideBy3(i) && divideBy5(i)) {
+                console.log("FizzBuzz");
+            } else if (divideBy3(i)) {
+                console.log("Fizz");
+            } else if (divideBy5(i)) {
+                console.log("Buzz");
+            } else {
+                console.log(i);
+            }
+        }
+
+        function divideBy3(n) {
+            return n % 3 === 0;
+        }
+
+        function divideBy5(n) {
+            return n % 5 === 0;
+        }
+
+    </script>
+    
+</body>
+</html>
