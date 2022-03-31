@@ -7,7 +7,23 @@
 <body>
   <script>
     // Your JavaScript goes here!
-    console.log("Hello, World!")
+    let add7 = (n) => n + 7;
+    let multiply = (a, b) => a * b;
+    
+    function capitalize(string) {
+        firstLetter = string.substring(0, 1);
+        return firstLetter.toUpperCase();
+    }
+
+    function lastLetter(string) {
+        return string.substr(-1, 1);
+    }
+
+    console.log(add7(1));
+    console.log(multiply(2, 4));
+    console.log(capitalize("Excelsior"));
+    console.log(lastLetter("ExcelsioR"));
+
   </script>
 </body>
 </html>
