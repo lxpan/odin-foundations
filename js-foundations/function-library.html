@@ -38,6 +38,16 @@
         return num;
     }
 
+    function squareRoot(num) {
+        if (num < 0) return undefined;
+        return Math.sqrt(num);
+    }
+
+    function circumference(num) {
+        if (num < 0) return undefined;
+        return 2 * Math.PI * num;
+    }
+
     input.addEventListener('change', () => {
         const num = parseFloat(input.value);
         if (isNaN(num)) {
@@ -46,6 +56,8 @@
             para.textContent = `${num} squared is ${squared(num)}. `;
             para.textContent += `${num} cubed is ${cubed(num)}. `;
             para.textContent += `${num} factorial is ${factorial(num)}. `;
+            para.textContent += `${num} square root is ${squareRoot(num)}. `;
+            para.textContent += `${num} circumference is ${circumference(num).toFixed(2)}. `;
         }
     })
 
