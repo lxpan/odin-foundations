@@ -40,6 +40,7 @@ _btn.addEventListener('click', function(e) {
 // buttons is a node list. It looks and acts much like an array.
 const buttons = document.querySelectorAll('button');
 
+// iterate through each button node and add a 'click' event listener
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
         alert(button.id);
