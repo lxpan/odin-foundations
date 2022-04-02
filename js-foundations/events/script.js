@@ -30,6 +30,17 @@ _btn.addEventListener('click', function(e) {
 }); */
 
 // target refers to the button itself
+/*
 _btn.addEventListener('click', function(e) {
     e.target.style.background = 'blue';
+}); */
+
+// buttons is a node list. It looks and acts much like an array.
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        alert(button.id);
+    });
 });
+
