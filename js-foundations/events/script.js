@@ -18,6 +18,17 @@ function consoleLogFunction() {
 }
 
 // logs the event (PointerEvent)
+/*
 _btn.addEventListener('click', function(e) {
     console.log(e);
+}); */
+
+// <button id="_btn">Click Me</button>
+/*
+_btn.addEventListener('click', function(e) {
+    console.log(e.target);
+}); */
+
+_btn.addEventListener('click', function(e) {
+    e.target.style.background = 'blue';
 });
