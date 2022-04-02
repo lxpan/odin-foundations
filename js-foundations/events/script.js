@@ -29,6 +29,7 @@ _btn.addEventListener('click', function(e) {
     console.log(e.target);
 }); */
 
+// target refers to the button itself
 _btn.addEventListener('click', function(e) {
     e.target.style.background = 'blue';
 });
